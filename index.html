@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="start-game">
+        <div class="start-modal">
+            <img src="./images/logo.svg" alt="">
+            <div class="modal-container">
+                <h1>Pick player 1's Mark</h1>
+                <div class="pick">
+                    <button class="x letter" data-value="X">
+                        <img src="./images/icon-x.svg" alt="">
+                    </button>
+                    <button class="o letter" data-value="O">
+                        <img src="./images/icon-o.svg" alt="">
+                    </button>
+                </div>
+                <p>Remember X goes first</p>
+            </div>
+            <div class="new-game">
+                <button class="start" value="cpu">NEW GAME (VS CPU) </button>
+                <button class="start" value="player2">NEW GAME (VS PLAYER)</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="backdrop game-end">
+        <div class="result">
+            <p class="result-info"></p>
+            <div class="winner">
+                <img src="" alt="" class="winner-letter">
+                <span class="round">TAKES THE ROUND</span>
+            </div>
+            <div class="game-end__btn">
+                <button class="next" value="quit">QUIT</button>
+                <button class="next" value="next-round">NEXT ROUND</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="confirm-restart backdrop">
+        <h1>RESTART GAME</h1>
+        <div class="restart-btns">
+            <button class="restart-btn" data-action="no">NO, CANCEL</button>
+            <button class="restart-btn" data-action="yes">YES, RESTART</button>
+        </div>
+    </div>
+
+    <div class="game-container">
+        <header>
+            <div class="logo">
+                <img src="./images/logo.svg" alt="">
+            </div>
+            <div class="turn">X TURN</div>
+            <button class="restart">
+                <img src="./images/icon-restart.svg" alt="">
+            </button>
+        </header>
+
+        <div class="game-body">
+            <button class="btn" value="0"></button>
+            <button class="btn" value="1"></button>
+            <button class="btn" value="2"></button>
+
+            <button class="btn" value="0"></button>
+            <button class="btn" value="1"></button>
+            <button class="btn" value="2"></button>
+
+            <button class="btn" value="0"></button>
+            <button class="btn" value="1"></button>
+            <button class="btn" value="2"></button>
+        </div>
+
+        <footer>
+            <div class="you">
+                <p class="player"> </p>
+                <h3 class="my-score">0</h3>
+            </div>
+            <div class="ties">
+                <p>Ties</p>
+                <h3 class="tie-num">0</h3>
+            </div>
+            <div class="cpu">
+                <p class="cpu-letter"></p>
+                <h3 class="cpu-score">0</h3>
+            </div>
+        </footer>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
